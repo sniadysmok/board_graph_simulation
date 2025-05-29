@@ -94,7 +94,7 @@ void bfs(int i, int j, int udel){
                 if((is_empty(xi,yi) || board[yi][xi] == 2) && visited[yi][xi] > visited[y][x] + 1){
                     parent[yi][xi].first = y;
                     parent[yi][xi].second = x;
-                    std::cout<<"PARENT : "<<y<<" "<<x<<" "<<yi<<" "<<xi<<std::endl;
+                   // std::cout<<"PARENT : "<<y<<" "<<x<<" "<<yi<<" "<<xi<<std::endl;
                     visited[yi][xi] = visited[y][x] + 1;
                     Q.push({yi,xi});
                 }
